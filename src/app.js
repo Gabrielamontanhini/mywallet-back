@@ -10,7 +10,7 @@ app.use(router)
 
 
 // Deixa o app escutando, à espera de requisições
-const PORT = 5000
-app.listen(PORT, () => {
-    console.log(`Servidor rodando em ${PORT}`)
+const port = process.env.PORT || 5000
+app.listen(port, () => {
+    console.log(`Servidor rodando em ${port}`)
 })
